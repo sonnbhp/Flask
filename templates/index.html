@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 style="color:blue;">Hello {{content}}</h1>
+{% for x in range(20)%}
+    {% if x%3 == 0 %}
+    <h2 style="color:blue;"> Số chia hết cho 3 là: {{x}}</h2>
+     {%endif%}
+ {%endfor%}
+{% for x in cars %}
+    <h2 style="color:blue;">{{x}}</h2>
+  {%endfor%}
+</body>
+</html>
